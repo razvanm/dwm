@@ -18,20 +18,6 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
-/* Razvan's colors */
-/*
-static const char normbordercolor[] = "#333333";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#888888";
-static const char selbordercolor[]  = "#4c7899";
-static const char selbgcolor[]      = "#285577";
-static const char selfgcolor[]      = "#ffffff";
-static const char *colors[][3]      = {
-	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
-	[SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
-};
-*/
-
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -71,8 +57,6 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-/* Razvan's dmenucmd */
-/* static const char *dmenucmd[] = { "dmenu_run", "-fn", "monospace:size=10", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL }; */
 static const char *termcmd[]  = { "gnome-terminal", NULL };
 static const char *screensavercmd[]  = { "xsecurelock", NULL };
 
